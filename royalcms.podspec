@@ -12,7 +12,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc            = true
   s.ios.vendored_frameworks = 'Framework/Royalcms.framework'
-  s.public_header_files = 'Framework/Royalcms.framework/Headers/Royalcms.h'
+  s.public_header_files = [
+      'Framework/Royalcms.framework/Headers/Royalcms.h'
+  ]
   s.frameworks = [
       'Foundation', 
       'UIKit'
